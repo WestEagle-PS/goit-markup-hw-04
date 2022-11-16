@@ -65,7 +65,6 @@ p {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid red;
 }
 
 
@@ -418,7 +417,6 @@ img {
     height: 44px;
 
     color: #AFB1B8;
-
     border-radius: 50%;
 }
 
@@ -434,10 +432,42 @@ img {
 
 
 /* -------------------секция "постійні клієнти"-------------------- */
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
 
+.clients-item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
 
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    padding: 15px 30px;
+}
 
+.clients-item:hover {
+    border-color: #2196F3;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: #2196F3;
+}
+
+.clients-logo {
+    fill: currentColor;
+}
 
 
 /* -----------------------страница портфолио----------------------------- */
@@ -463,11 +493,6 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
-}
-
-.first-btn {
-    padding: 6px 25px;
-    margin-right: 8px;
 }
 
 .filter-item {
@@ -504,6 +529,8 @@ img {
     background-color: #2196F3;
     color: var(--main-white-clr);
     border-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
@@ -636,5 +663,51 @@ calc((100% - кол-во маржинов в строке * значение м�
 }
 
 .footer-text {
-    color: var(--main-white-clr)
+    color: var(--main-white-clr);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 70px;
+}
+
+.footer-links-container {
+    margin-top: 12px;
+}
+
+.footer-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    color: #AFB1B8;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.footer-icon-svg {
+    fill: currentColor;
 }
